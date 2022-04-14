@@ -4,7 +4,7 @@ import flax.linen as nn
 from .blocks import VGGBlock
 
 
-class VGG16(nn.Module):
+class VGG19(nn.Module):
     include_top: bool = True
     pooling: str = "avg"
     num_classes: int = 1000
@@ -29,21 +29,21 @@ class VGG16(nn.Module):
         # Block 3
         x = VGGBlock(
             num_features=256,
-            num_convs=3,
+            num_convs=4,
             kernel_initializer=self.bias_initializer,
             bias_initializer=self.bias_initializer,
         )(x)
         # Block 4
         x = VGGBlock(
             num_features=512,
-            num_convs=3,
+            num_convs=4,
             kernel_initializer=self.bias_initializer,
             bias_initializer=self.bias_initializer,
         )(x)
         # Block 5
         x = VGGBlock(
             num_features=512,
-            num_convs=3,
+            num_convs=4,
             kernel_initializer=self.bias_initializer,
             bias_initializer=self.bias_initializer,
         )(x)

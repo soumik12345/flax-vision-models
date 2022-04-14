@@ -1,1 +1,1 @@
-from .build_models import build_vgg16
+from .build_models import build_vgg16, build_vgg19
