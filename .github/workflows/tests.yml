@@ -1,0 +1,21 @@
+name: Run tests
+env:
+  WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+on:
+  pull_request:
+    paths:
+      - .github/workflows/**
+      - flax_models/**
+      - tests.py
+      - pyproject.toml
+      - poetry.lock
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pip install -U pip
+          pip install poetry
+          poetry install
+          poetry run pytest tests.py
