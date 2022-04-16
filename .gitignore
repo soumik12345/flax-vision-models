@@ -135,3 +135,6 @@ dmypy.json
 
 # WandB
 wandb/
+
+# Poetry
+poetry.lock
