@@ -50,6 +50,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+.benchmarks/
 
 # Translations
 *.mo
@@ -135,6 +136,7 @@ dmypy.json
 
 # WandB
 wandb/
+artifacts/
 
 # Poetry
 poetry.lock
