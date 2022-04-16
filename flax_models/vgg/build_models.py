@@ -1,9 +1,10 @@
 import os
-import jax
 import wandb
 import deepdish
-import numpy as np
 from typing import Tuple
+
+import jax
+import numpy as np
 from clu import parameter_overview
 
 from .vgg16 import VGG16
