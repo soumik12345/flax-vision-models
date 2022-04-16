@@ -131,3 +131,7 @@ dmypy.json
 # Data
 **.jpg
 **.json
+**.h5
+
+# WandB
+wandb/
