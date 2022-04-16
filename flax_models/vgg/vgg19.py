@@ -48,7 +48,7 @@ class VGG19(nn.Module):
             bias_initializer=self.bias_initializer,
         )(x)
         if self.include_top:
-            x = jnp.reshape(x, (x.shape[0], -1)) # Flatten
+            x = jnp.reshape(x, (x.shape[0], -1))  # Flatten
             x = nn.Dense(
                 4096,
                 kernel_init=self.bias_initializer,
@@ -69,7 +69,7 @@ class VGG19(nn.Module):
             x = self.classifier_activation(x)
         else:
             if self.pooling == "avg":
-                x = jnp.mean(x, axis=(1, 2)) # Global Average Pooling
+                x = jnp.mean(x, axis=(1, 2))  # Global Average Pooling
             elif self.pooling == "max":
-                x = jnp.max(x, axis=(1, 2)) # Global Max Pooling
+                x = jnp.max(x, axis=(1, 2))  # Global Max Pooling
         return x
