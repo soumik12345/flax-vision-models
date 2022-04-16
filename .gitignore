@@ -137,6 +137,3 @@ dmypy.json
 # WandB
 wandb/
 artifacts/
-
-# Poetry
-poetry.lock
