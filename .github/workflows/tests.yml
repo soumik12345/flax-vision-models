@@ -1,6 +1,4 @@
 name: Run tests
-env:
-  WANDB_API_KEY: {{ secrets.WANDB_API_KEY }}
 on:
   pull_request:
     paths:
@@ -19,3 +17,5 @@ jobs:
           pip install poetry
           poetry install --no-dev
           poetry run pytest tests.py
+      - env:
+          WANDB_API_KEY: {{ secrets.WANDB_API_KEY }}
