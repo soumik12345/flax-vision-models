@@ -23,6 +23,6 @@ setuptools.setup(
     ],
     package_dir={"": "flax_models"},
     packages=setuptools.find_packages(where="flax_models"),
-    python_requires=">=3.8.10,<3.11",
+    python_requires=">=3.7.12,<3.11",
     install_requires=dependencies,
 )
