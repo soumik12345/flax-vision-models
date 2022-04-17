@@ -10,7 +10,7 @@ with open("requirements.txt") as f:
 
 setuptools.setup(
     name="flax-vision-models",
-    version="0.0.1",
+    version="0.0.2",
     author="Soumik Rakshit",
     author_email="19soumik.rakshit96@gmail.com",
     description="A repository of Deep Learning models in Flax",
