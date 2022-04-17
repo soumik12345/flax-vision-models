@@ -1,0 +1,8 @@
+jax>=0.3.7
+jaxlib>=0.3.7
+flax>=0.4.1
+clu>=0.0.6
+wget>=3.2
+deepdish>=0.3.7
+wandb>=0.12.14
+pytest>=7.1.1
