@@ -10,4 +10,4 @@ A repository of Deep Learning models in [Flax](https://github.com/google/flax) p
 |Model|Original Source|Paper|
 |---|---|---|
 |`flax_models.vgg.build_vgg16`|[`tf.keras.applications.vgg16.VGG16`](https://github.com/keras-team/keras/blob/v2.8.0/keras/applications/vgg16.py#L43-L227)|[Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)|
-|`flax_models.vgg.build_vgg19`|[`tf.keras.applications.vgg19.VGG19`](https://github.com/keras-team/keras/blob/v2.8.0/keras/applications/vgg19.py#L43-L231)|(Very Deep Convolutional Networks for Large-Scale Image Recognition)[https://arxiv.org/abs/1409.1556]|
+|`flax_models.vgg.build_vgg19`|[`tf.keras.applications.vgg19.VGG19`](https://github.com/keras-team/keras/blob/v2.8.0/keras/applications/vgg19.py#L43-L231)|[Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)|
