@@ -6,11 +6,11 @@ A repository of Deep Learning models in [Flax](https://github.com/google/flax) p
 
 ### Installation
 
-![](assets/1.svg)
+![](https://i.imgur.com/Jt9jKbS.png)
 
 ### Sample Inference Example
 
-![](assets/2.svg)
+![](https://i.imgur.com/1YZSKIV.png)
 
 # Pre-trained Models
 
