@@ -8,8 +8,8 @@ import jax
 import numpy as np
 import jax.numpy as jnp
 
-from flax_models.utils import decode_probabilities_imagenet
-from flax_models.vgg import build_vgg16, build_vgg19, preprocess as prepocessing_fn
+from flax_vision_models.utils import decode_probabilities_imagenet
+from flax_vision_models.vgg import build_vgg16, build_vgg19, preprocess as prepocessing_fn
 
 
 class VGG16TestCase(unittest.TestCase):

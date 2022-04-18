@@ -21,7 +21,7 @@ with open("requirements.txt") as f:
 
 setuptools.setup(
     name="flax-vision-models",
-    version=find_version(os.path.join('flax_models', '__init__.py')),
+    version=find_version(os.path.join('flax_vision_models', '__init__.py')),
     author="Soumik Rakshit",
     author_email="19soumik.rakshit96@gmail.com",
     description="A repository of Deep Learning models in Flax",
