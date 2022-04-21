@@ -29,7 +29,7 @@ class VGG16TestCase(unittest.TestCase):
         self.k = 5
 
     def test_vgg16_with_top(self):
-        model, parameters = build_vgg16(show_parameter_overview=False, pretrained=True)
+        model, parameters = build_vgg16(show_parameter_overview=False, pretrained=True, pooling="avg")
         out = model.apply(parameters, self.input_batch)
         assert out.shape == (1, 1000)
         topk_probs, topk_classes = jax.lax.top_k(out, k=self.k)
@@ -63,7 +63,7 @@ class VGG19TestCase(unittest.TestCase):
         self.k = 5
 
     def test_vgg16_with_top(self):
-        model, parameters = build_vgg19(show_parameter_overview=False, pretrained=True)
+        model, parameters = build_vgg19(show_parameter_overview=False, pretrained=True, pooling="avg")
         out = model.apply(parameters, self.input_batch)
         assert out.shape == (1, 1000)
         topk_probs, topk_classes = jax.lax.top_k(out, k=self.k)
