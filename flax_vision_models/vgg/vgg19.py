@@ -1,12 +1,14 @@
 import jax.numpy as jnp
 import flax.linen as nn
 
+from typing import Optional
+
 from .blocks import VGGBlock
 
 
 class VGG19(nn.Module):
     include_top: bool = True
-    pooling: str = "avg"
+    pooling: Optional[str] = None
     num_classes: int = 1000
     kernel_initializer: nn.initializers = nn.initializers.lecun_normal()
     bias_initializer: nn.initializers = nn.initializers.zeros

@@ -40,7 +40,7 @@ class VGG16TestCase(unittest.TestCase):
 
     def test_vgg16_without_top(self):
         model, parameters = build_vgg16(
-            show_parameter_overview=False, include_top=False
+            show_parameter_overview=False, include_top=False, pooling="avg"
         )
         out = model.apply(parameters, self.input_batch)
         assert out.shape == (1, 512)
@@ -74,7 +74,7 @@ class VGG19TestCase(unittest.TestCase):
 
     def test_vgg16_without_top(self):
         model, parameters = build_vgg19(
-            show_parameter_overview=False, include_top=False
+            show_parameter_overview=False, include_top=False, pooling="avg"
         )
         out = model.apply(parameters, self.input_batch)
         assert out.shape == (1, 512)
